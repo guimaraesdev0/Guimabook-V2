@@ -1,0 +1,66 @@
+<script src="/js/script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+
+
+
+</script> 
+{{>_nav}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-2 margin-l-5 col-sm-12 border-black homepage-container-profile">
+              <div class="d-flex justify-content-center profile-icon">
+                <div class="container-profile-icon">
+                  <img src="/imgs/userimgs/{{imgprofile}}" alt="Avatar" class="image rounded-circle">
+                  <div class="overlay">
+                    <div id="profileicon" class="text"><span class="text-primary"><i class="bi bi-pen-fill"></i></span></div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="fs-5 text-center">{{fname}} {{lname}}</p>
+              <p class="fs-6 text-center">{{description}}</p>
+              <p class="fs-6"><i class="bi bi-house"></i>São Paulo</p>
+
+
+            </div>
+            <div class="col-md-6 margin-l-5 col-sm-12 border-black homepage-container-timeline">
+              {{>_msg}}
+              <form action="/posts/add" method="post">
+                <textarea name="postcontent" id="" class="input-post" placeholder="Faça uma postagem..."></textarea>
+                <div class="d-flex justify-content-btween">
+                  <input type="submit" value="Postar" class="btn btn-primary">
+                </div>
+              </form>
+
+              <div class="timeline-posts">
+              {{#each posts}}
+              <div class="card timeline-post-card">
+                <div class="card-header">
+                  <a href="/profile/{{authorid}}"><img src="/imgs/userimgs/{{authorimg}}" alt="" class="rounded-circle" height="50" width="50"></a>
+                  <label>{{authorname}}</label>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">{{postcontent}}</p>
+                </div>
+              </div>
+              {{else}}
+              <span class="text-center">Não há nenhuma postagem cadastrado.</span>
+              {{/each}}
+              </div>
+
+            </div>
+            <div class="col-md-2 margin-l-5 margin-r-5 col-sm-12 border-black homepage-container-profile">
+                  
+            </div>
+        </div>
+    </div>
+</div>

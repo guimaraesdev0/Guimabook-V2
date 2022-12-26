@@ -1,0 +1,113 @@
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand brand-font" href="#">GUIMABOOK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <form class="d-flex padding-l-5" role="Login" action="log-user" method="post">
+            <div class="input-group padding-l-5">
+                <span class="input-group-text" id="input-login-icon"><i class="bi bi-envelope"></i></span>
+                <input type="email" class="form-control" name="email" placeholder="Seu email" aria-label="Seu Email" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group padding-l-5 padding-r-5">
+                <span class="input-group-text" id="password-field-icon"><i class="bi bi-lock"></i></span>
+                <input type="password" class="form-control" name="senha" placeholder="Sua Senha" aria-label="Sua Senha" aria-describedby="basic-addon1">
+            </div>
+        <button class="btn btn-light" type="submit">Logar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-xl-6 col-sm-12 register-container-info">
+            <div class="hero-info">
+                <p class="title-hero-info text-center facebookfont facebook-blue-font">GUIMABOOK</p>
+                <p class="fs-5 text-center">O Guimabook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-6 col-sm-12 register-container-form">
+            <div class="register-form">
+                <form class="row g-3" action="cad-user" method="post">
+                    {{>_msg}}
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="inputEmail4" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" name="senha" class="form-control" id="inputPassword4" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputFirstName" class="form-label">Primeiro Nome</label>
+                        <input type="text" name="firstname" class="form-control" id="inputFirstName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputFirstName" class="form-label">Segundo Nome</label>
+                        <input type="text" name="lastname" class="form-control" id="inputFirstName" required>
+                    </div>
+                    <div class="col-md-4">
+                    <label for="inputState" class="form-label">Estado</label>
+                    <select id="inputState" name="state" class="form-select" required>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                    </div>
+                    <div class="col-md-3">
+                    <label for="inputZip" class="form-label">Data Nascimento</label>
+                    <input type="date" class="form-control" name="nasc" id="inputNasc">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputZip" class="form-label">Gênero</label>
+                    <select id="inputState" name="gender" class="form-select" required>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Não Binário</option>
+                        <option value="4">Outro</option>
+                    </select>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                            Eu concordo com os termos de condições
+                        </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

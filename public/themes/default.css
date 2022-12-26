@@ -1,0 +1,119 @@
+@font-face {
+    font-family: facebook;
+    font-weight: bold;
+    src: url("/fonts/FACEBOLF.OTF") format("opentype");
+}
+body{
+    background-color: rgb(233, 233, 233);
+}
+.login-form{
+    padding-left: 50px;
+}
+.padding-l-5{
+    padding-left: 5px;
+}
+.padding-r-5{
+    padding-right: 5px;
+}
+.brand-font{
+    transition: 0.5s;
+    font-size: 30px;
+    color: white;
+    font-family: 'facebook';
+}
+.facebookfont{
+    font-family: 'facebook';
+}
+.brand-font:hover{
+    transition: 0.5s;
+    font-size: 30px;
+    color: rgb(183, 202, 255);
+    font-family: 'facebook';
+}
+.register-container-info{
+    height: 100vh;
+}
+.register-container-form{
+    height: 100vh;
+}
+.hero-info{
+    margin-top: 30%;
+}
+.register-form{
+    margin-top: 20%;
+}
+.title-hero-info{
+    font-size: 350%;
+}
+.facebook-blue-font{
+    color: #1778F2;
+}
+.border-black{
+    border: 1px solid rgb(231, 231, 231);
+}
+
+.homepage-container-timeline{
+    min-height: 100vh;
+    height: auto;
+}
+.margin-r-5{
+    margin-right: 5%;
+}
+.margin-l-5{
+    margin-left: 5%;
+}
+.profile-icon{
+    margin-top: 10%;
+}
+.profile-icon-img{
+    height: 150px;
+    width: 150px;
+}
+.container-profile-icon {
+    position: relative;
+    width: 150px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .overlay {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fffdfd63;
+  }
+  
+  .container-profile-icon:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.input-post{
+    width: 100vh;
+    height: 150px;
+}
+.timeline-post-card{
+    margin-top: 4%;
+}

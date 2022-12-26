@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-redis": "^6.1.3",
+    "connect-session-sequelize": "^7.1.5",
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "ioredis": "^5.2.4",
+    "mysql2": "^2.3.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "redis": "3.0.0",
+    "redis-server": "^1.2.2",
+    "sequelize": "^6.28.0",
+    "sweetalert2": "^11.6.16"
+  }
+}
